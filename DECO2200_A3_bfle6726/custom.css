@@ -1,0 +1,348 @@
+/*This Custom CSS file has not been structured in any particular order.  
+
+Modify this file to your hearts content and make your website look awesome!*/
+
+
+body {
+    background-color: #f9faff;
+    padding-top: 80px;
+}
+
+/*Home*/
+.full-page-bg {
+    position: absolute;
+    margin-top: -80px;
+    padding-bottom: 100px;
+    width: 100%;
+    min-height: 100vh;
+    background: url('./img/common/homepage_bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*Cards*/
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+/*Navbar Rules*/
+img.nav-bar-img {
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: #f9faff;
+    padding: 2.5rem 2rem;
+
+}
+
+.fixed-top {
+    z-index: 2;
+}
+
+a.navbar-brand {
+    font-family: 'Archivo Black', Sans-Serif;
+    font-size: 14px;
+}
+
+/*Floating Nav*/
+.floating-nav {
+    position: fixed;
+    margin-top: 50px;
+    border-left: 1px solid #727272;
+}
+
+a.float-nav-link {
+    font-family: 'Archivo Black', Sans-Serif;
+    color: #595959;
+    font-size: 1.125em;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/*Image Rules*/
+img {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+}
+
+/*Font Override Rules*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Archivo Black', Sans-Serif;
+    margin-bottom: 20px;
+    color: #26211D;
+}
+
+h1.welcome-special {
+    position: relative;
+    z-index: 0;
+}
+
+
+
+h3 {
+    text-transform: uppercase;
+    color: #26211D;
+    letter-spacing: -0.5px;
+}
+
+p,
+span,
+li,
+a {
+    font-family: 'Roboto', Sans-Serif;
+    text-align: justify;
+    color: #26211D;
+
+}
+
+
+
+a.nav-item {
+    font-family: 'Archivo Black', Sans-Serif !important;
+}
+
+p {
+    color: #26211D;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+span.img-caption {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 0px 10px 0px;
+}
+
+/*Container/class etc Override Rules*/
+.welcome-message {
+    top: 13em;
+}
+
+.welcome-button-container {
+    margin-top: 20px;
+}
+
+.welcome-button {
+    background-color: transparent;
+    border-radius: 0px 0px 0px 0px;
+    border: 3px solid #000;
+    font-family: 'Archivo Black', Sans-Serif;
+    font-size: 15px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.welcome-button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.master-heading {
+    padding-top: 301px;
+}
+
+.section-heading {
+    padding-top: 100px;
+}
+
+.slide-show {
+    padding: 30px 0px 50px 0px;
+}
+
+
+/* Vertical Rythym test */
+html {
+    font-size: 1.125em;
+}
+
+body {
+    background-color: #f9faff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #26211D;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 0.5em;
+    font-family: 'Archivo Black', Sans-Serif;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.998em;
+}
+
+h2 {
+    font-size: 2.827em;
+}
+
+h3 {
+    font-size: 1.999em;
+}
+
+h4 {
+    font-size: 1.414em;
+}
+
+small,
+.font_small {
+    font-size: 0.707em;
+}
+
+h4.welcome-special-sub {
+    font-family: 'Roboto', Sans-Serif;
+    margin: 0.414em 0 0.5em;
+}
+
+h2.welcome-special {
+    margin: 0.414em 0 0.5em;
+}
+
+
+
+/* Portrait styles */
+
+img#selfportrait {
+    z-index: 3;
+    width: 120px;
+    left: 53%;
+    top: 22%;
+    position: fixed;
+    opacity: 0.88;
+}
+
+.square {
+    background-color: #3944ef;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    left: 58%;
+    top: 19%;
+    position: fixed;
+}
+
+
+/*Footer*/
+.footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #f9faff;
+    border-top: 1px solid #f9faff;
+}
+
+
+/* Animations go here */
+
+
+/* Hover.css Underline Reveal */
+.hvr-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    background: #3944ef;
+    height: 5px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(20px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+.hvr-underline-reveal:hover:before,
+.hvr-underline-reveal:focus:before,
+.hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+a:hover {
+    color: #26211D;
+    text-decoration: underline;
+}
+
+a:active {}
+
+/* Hover.css Underline Reveal End */
+
+
+.row.introduction {
+    padding-bottom: 130px;
+}
+
+.pushitdown {
+    padding-bottom: 22px;
+}
+
+li {
+    padding: 4px;
+}
+
+@media only screen and (max-width: 1500px) {
+    img#selfportrait {
+        z-index: 3;
+        width: 120px;
+        left: 819px;
+        top: 204px;
+        /* right: 101px; */
+        position: fixed;
+        opacity: 0.88;
+    }
+
+
+    .square {
+        background-color: #3944ef;
+        z-index: 0;
+        width: 120px;
+        height: 120px;
+        left: 58%;
+        top: 19%;
+        position: fixed;
+    }
+
+
+}
