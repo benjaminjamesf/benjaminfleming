@@ -1,6 +1,4 @@
-/*This Custom CSS file has not been structured in any particular order.  
 
-Modify this file to your hearts content and make your website look awesome!*/
 
 
 body {
@@ -167,6 +165,12 @@ span.img-caption {
 }
 
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.414em;
+}
+
 /* Vertical Rythym test */
 html {
     font-size: 1.125em;
@@ -235,7 +239,7 @@ img#selfportrait {
     left: 53%;
     top: 22%;
     position: fixed;
-    opacity: 0.88;
+    /* opacity: 0.88; */
 }
 
 .square {
@@ -257,6 +261,20 @@ img#selfportrait {
     min-height: 100px;
     background-color: #f9faff;
     border-top: 1px solid #f9faff;
+}
+
+
+
+/* Portfolio specific styling */
+
+td.sm-table-txt {
+    /* font-style: oblique; */
+    color: rgba(39, 33, 27, 0.63);
+}
+
+td.md-table-txt {
+    font-family: 'Archivo Black';
+    color: rgb(39, 33, 27);
 }
 
 
@@ -314,8 +332,10 @@ a:active {}
     padding-bottom: 130px;
 }
 
+
+
 .pushitdown {
-    padding-bottom: 22px;
+    padding-bottom: 24px;
 }
 
 li {
