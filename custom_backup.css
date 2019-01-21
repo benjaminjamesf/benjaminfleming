@@ -244,8 +244,8 @@ img#selfportrait {
     z-index: 2;
     width: 120px;
     height: 120px;
-    left: 794px;
-    top: 196px;
+    left: 58%;
+    top: 19%;
     position: fixed;
 }
 
@@ -344,6 +344,30 @@ li {
     padding: 4px;
 }
 
+@media only screen and (max-width: 1500px) {
+    img#selfportrait {
+        z-index: 4;
+        width: 120px;
+/*        left: 819px;*/
+        top: 163px;
+        /* right: 101px; */
+        position: fixed;
+/*        opacity: 0.88;*/
+    }
+
+
+    .square {
+        background-color: #3944ef;
+        z-index: 2;
+        width: 120px;
+        height: 120px;
+        left: 58%;
+        top: 19%;
+        position: fixed;
+    }
+
+
+}
 
 
 
@@ -389,222 +413,26 @@ div#mobilecarouselshow {
 
 
 
-/* Media query specific styles */
-
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-    img#selfportrait {
-        left: 857px;
-        top: 229px;
-    }
-
-    .square {
-        left: 874px;
-        top: 196px;
-
-    }
+@media only screen and (max-width: 420px) {
     
     .fixed-top {
-    z-index: 4;
+    position: absolute;
 }
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    //CSS
-
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    //CSS
-
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-    .square {
-        left: 552px;
-        top: 196px;
-    }
-
-    img#selfportrait {
-        left: 535px;
-        top: 229px;
-
-    }
-
-    .master-heading {
-        padding-top: 262px;
-    }
-
-    .fixed-top {
-        position: absolute;
-    }
-
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-    .master-heading {
-        padding-top: 222px;
-    }
-
-    .fixed-top {
-        position: absolute;
-    }
 
     h1 {
         margin-top: 0;
         font-size: 2.627em;
     }
-
-
-    img#selfportrait {
-        z-index: 4;
-        width: 120px;
-        left: 346px;
-        top: 167px;
-        /* right: 101px; */
-        position: fixed;
-        /*        opacity: 0.88;*/
-    }
-
-    .square {
-        background-color: #3944ef;
-        z-index: 2;
-        width: 120px;
-        height: 120px;
-        left: 388px;
-        top: 142px;
-        position: fixed;
-    }
-
-    table#services {
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    td.sm-table-txt {
-        font-size: 0.807em;
-    }
-
-    div#mobilecarouselhide {
-        display: none;
-    }
-
-    div#mobilecarouselshow {
-
-        display: block;
-
-    }
-
-    .carousel-image {
-        display: block;
-        height: 241px;
-        /* set min-width, allow images to set cell width */
-        min-width: 260px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
-
-    div#under-carousel {
-        padding-top: 45px;
-    }
-
-    .carousel-image2 {
-        display: block;
-        height: 410px;
-        /* set min-width, allow images to set cell width */
-        min-width: 220px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
-
-    .landscape-carousel-image2 {
-        display: block;
-        height: 222px;
-        /* set min-width, allow images to set cell width */
-        min-width: 360px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
-
-
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-
-    .fixed-top {
-        position: absolute;
-    }
-
-    h1 {
-        margin-top: 0;
-        font-size: 2.627em;
-    }
-
-
-    img#selfportrait {
+    
+    
+        img#selfportrait {
         z-index: 4;
         width: 120px;
         left: 186px;
         top: 167px;
         /* right: 101px; */
         position: fixed;
-        /*        opacity: 0.88;*/
-    }
-
-    .square {
-        background-color: #3944ef;
-        z-index: 2;
-        width: 120px;
-        height: 120px;
-        left: 218px;
-        top: 128px;
-        position: fixed;
+/*        opacity: 0.88;*/
     }
 
     table#services {
@@ -622,50 +450,49 @@ div#mobilecarouselshow {
     }
 
     div#mobilecarouselshow {
-
+        
         display: block;
-
+       
     }
 
-    .carousel-image {
-        display: block;
-        height: 241px;
-        /* set min-width, allow images to set cell width */
-        min-width: 260px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
-
+.carousel-image {
+  display: block;
+  height: 241px;
+  /* set min-width, allow images to set cell width */
+  min-width: 260px;
+  max-width: 100%;
+  margin-right: 10px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
+}
+    
     div#under-carousel {
-        padding-top: 45px;
-    }
-
-    .carousel-image2 {
-        display: block;
-        height: 410px;
-        /* set min-width, allow images to set cell width */
-        min-width: 220px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
-
+    padding-top: 45px;
+}
+    
+  .carousel-image2 {
+  display: block;
+  height: 410px;
+  /* set min-width, allow images to set cell width */
+  min-width: 220px;
+  max-width: 100%;
+  margin-right: 10px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
+}
+    
     .landscape-carousel-image2 {
-        display: block;
-        height: 222px;
-        /* set min-width, allow images to set cell width */
-        min-width: 360px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
-
+  display: block;
+  height: 222px;
+  /* set min-width, allow images to set cell width */
+  min-width: 360px;
+  max-width: 100%;
+  margin-right: 10px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
+}
 
 }
