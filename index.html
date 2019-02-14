@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./custom.css">
 
     <!-- Page Title -->
-    <title>Benjamin Fleming | Product Designer</title>
+    <title>Benjamin Fleming - Product Designer</title>
 
     <!-- This is our Meta Description -->
-    <meta name="description" content="What you write here will often show up in search results under the page title">
+    <meta name="description" content="A product designer living in Sydney, Australia.">
 
   </head>
   <body>
@@ -36,9 +36,7 @@
                 <li class="nav-item">
               <a class="nav-item nav-link hvr-underline-reveal" href="./contact.html">CONTACT</a> 
                     </li>
-                <li class="nav-item">
-              <a class="nav-item nav-link hvr-underline-reveal" href="./process-journal.html">PROCESS</a>
-                </li>
+
                 <li class="nav-item">
               <a class="nav-item nav-link active" href="./index.html">PROJECTS <span class="sr-only">(current)</span></a> <!-- Put the class 'active' on the link of the page you are on -->
                 </li>
@@ -53,7 +51,7 @@
 
                      <!-- Portrait logo start -->
             
-            <div class="square rounded float-right"></div>
+            <div class="square-main rounded float-right" id="squareanimate"></div>
         
               <img src="./img/common/face_blue.png" class="rounded float-right" id="selfportrait" alt="Benjamin Fleming">  
       
@@ -61,7 +59,7 @@
 
 
 
-      <div class="container bg-transparent">
+      <div class="container bg-transparent headliner">
           <div class="row align-items-center h-100">
               <div class="col-10 mx-auto">
                   <div class="card h-100 welcome-message">
@@ -75,15 +73,52 @@
               </div>
           </div>
       </div>
+      
+      
+       <div class="container bg-transparent">
+      <div class="row">
+  <div class="col-sm-6">
+    <div class="card w-75" id="card1">
+        
+        
+<img class="card-img-top ml-5" id="anim1" src="./img/common/ash_logo.png" alt="Card image cap" onclick="location.href='./autonomous-secure-housing.html';"> 
+  <div class="card-body">
+    <h5 class="card-title" onclick="location.href='./autonomous-secure-housing.html';">Autonomous Secure Housing</h5>
+    <p class="card-text text-muted">Exploring how cities could interface with autonomous technologies in response to gendered violence.</p>
+  </div>
+  <ul class="list-group list-group-flush bg-transparent">
+    <li class="list-group-item"><small>#Interaction design</small></li>
+  </ul>
+  
+    </div>
+  </div>
+<!--<div class="col-sm-6">
+    <div class="card w-75">
+        
+        
+<img class="card-img-top ml-5" src="./img/common/ash_logo.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Autonomous Secure Housing</h5>
+    <p class="card-text">Exploring how cities could interface with autonomous technologies in response to gendered violence.</p>
+  </div>
+  <ul class="list-group list-group-flush bg-transparent">
+    <li class="list-group-item"><small>Interaction design</small></li>
+  </ul>
+  
+    </div>
+  </div>-->
+</div>
+      </div>
 
 
 
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/flickity.pkgd.js"></script>
+    <script type="text/javascript" src="./js/customScript.js"></script>
     
   </body>
 </html>

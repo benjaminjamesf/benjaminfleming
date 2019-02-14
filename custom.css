@@ -23,6 +23,58 @@ body {
     background-color: transparent;
 }
 
+.list-group-item {
+    background-color: transparent;
+    border: none;
+}
+
+.card-img-top {
+    width: 240px;
+}
+
+.ml-7, .mx-7 {
+    margin-left: 7rem!important;
+}
+
+.square-ind1 {
+    background-color: #3944ef;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    left: 794px;
+    top: 196px;
+    position: fixed;
+}
+
+.list-group {
+    margin-top: -34px;
+   
+}
+
+
+/*.three {
+  transition: all 0.5s ease-in-out;
+  perspec0tive: 500px;
+  transform: perspective(500px) rotateY(40deg) rotateX(40deg);
+  box-shadow: 0px 0px 10px black;
+}*/
+
+#anim1 {
+    transition: all 0.5s ease-in-out;
+    perspective: 480px;
+    transform: perspective(480px) rotateY(11deg) rotateX(8deg);
+}
+
+#card1:hover > #anim1 {
+    transform: rotateY(0);
+}
+
+#anim1:hover {
+  transform: rotateY(0);
+}
+
+
+
 /*Navbar Rules*/
 img.nav-bar-img {
     margin-right: 10px;
@@ -70,6 +122,16 @@ img {
     -webkit-border-radius: 5px 5px 5px 5px;
     border: 0px solid #000000;
 }
+
+.img-flip {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
 
 /*Font Override Rules*/
 h1,
@@ -128,7 +190,10 @@ span.img-caption {
 /*Container/class etc Override Rules*/
 .welcome-message {
     top: 13em;
+    padding-bottom: 20em;
 }
+
+
 
 .welcome-button-container {
     margin-top: 20px;
@@ -226,7 +291,9 @@ h2.welcome-special {
     margin: 0.414em 0 0.5em;
 }
 
-
+blockquote {
+    font-size: 1.314em;
+}
 
 /* Portrait styles */
 
@@ -237,13 +304,20 @@ img#selfportrait {
     top: 229px;
     position: fixed;
     /* opacity: 0.88; */
+        transition: 0.3s;
+    transition-timing-function: ease-out;
 }
 
-.square {
-    background-color: #3944ef;
-    z-index: 2;
+#squareanimate {
     width: 120px;
     height: 120px;
+        transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.square-main {
+    background-color: #3944ef;
+    z-index: 2;
     left: 794px;
     top: 196px;
     position: fixed;
@@ -252,6 +326,7 @@ img#selfportrait {
 div#splice {
     position: relative;
     z-index: 3;
+    transition: 0.2s;
 }
 
 
@@ -386,6 +461,18 @@ div#mobilecarouselshow {
     display: none;
 }
 
+    .landscape-carousel-image2 {
+        display: block;
+        height: 444px;
+        /* set min-width, allow images to set cell width */
+        min-width: 360px;
+        max-width: 100%;
+        margin-right: 10px;
+        /* vertically center */
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
 
 
 
@@ -404,7 +491,7 @@ div#mobilecarouselshow {
         top: 229px;
     }
 
-    .square {
+    .square-main {
         left: 874px;
         top: 196px;
 
@@ -444,7 +531,7 @@ div#mobilecarouselshow {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    .square {
+    .square-main {
         left: 552px;
         top: 196px;
     }
@@ -496,7 +583,7 @@ div#mobilecarouselshow {
         /*        opacity: 0.88;*/
     }
 
-    .square {
+    .square-main {
         background-color: #3944ef;
         z-index: 2;
         width: 120px;
@@ -597,7 +684,7 @@ div#mobilecarouselshow {
         /*        opacity: 0.88;*/
     }
 
-    .square {
+    .square-main {
         background-color: #3944ef;
         z-index: 2;
         width: 120px;
