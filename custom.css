@@ -219,7 +219,7 @@ span.img-caption {
 }
 
 .master-heading {
-    padding-top: 301px;
+    margin-top: 301px;
 }
 
 .section-heading {
@@ -245,7 +245,7 @@ html {
 body {
     background-color: #f9faff;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.45;
     color: #26211D;
 }
@@ -392,6 +392,39 @@ td.md-table-txt {
     transition-timing-function: ease-out
 }
 
+
+/*
+.scrl-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    
+}
+*/
+
+.scrl-underline-reveal {
+    display: block;
+    opacity: 1;
+    content: "";
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    left: 23px;
+    right: 0;
+    bottom: 22px;
+    background: #3944ef;
+    height: 5px;
+    width: 275px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+
+
 .hvr-underline-reveal:hover:before,
 .hvr-underline-reveal:focus:before,
 .hvr-underline-reveal:active:before {
@@ -479,6 +512,11 @@ div#mobilecarouselshow {
 
 
 
+.portfolio-grid {
+    padding-bottom: 111px;
+
+}
+
 
 /* Media query specific styles */
 
@@ -547,7 +585,7 @@ div#mobilecarouselshow {
     }
 
     .master-heading {
-        padding-top: 262px;
+        margin-top: 262px;
     }
 
     .fixed-top {
@@ -564,7 +602,7 @@ div#mobilecarouselshow {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .master-heading {
-        padding-top: 222px;
+        margin-top: 222px;
     }
 
     .fixed-top {
@@ -757,6 +795,11 @@ div#mobilecarouselshow {
         top: 50%;
         transform: translateY(-50%)
     }
+    
+    .portfolio-grid {
+    padding-bottom: 111px;
+
+}
 
 
 }

@@ -36,6 +36,7 @@ var $gallery2 = $('.gallery2').flickity({
 
 window.onscroll = function () {
     scrollFunction()
+    scrollFunction2()
 };
 
 function scrollFunction() {
@@ -47,5 +48,15 @@ function scrollFunction() {
         document.getElementById("selfportrait").style.width = "120px";
         document.getElementById("squareanimate").style.width = "120px";
         document.getElementById("squareanimate").style.height = "120px";
+    }
+}
+
+
+function scrollFunction2() {
+    if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+         document.getElementById("scrollReveal").style.opacity = "1";
+    } else {
+       document.getElementById("scrollReveal").style.opacity = "0";
+
     }
 }
