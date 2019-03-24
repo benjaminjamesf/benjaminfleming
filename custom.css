@@ -32,8 +32,9 @@ body {
     width: 240px;
 }
 
-.ml-7, .mx-7 {
-    margin-left: 7rem!important;
+.ml-7,
+.mx-7 {
+    margin-left: 7rem !important;
 }
 
 .square-ind1 {
@@ -48,7 +49,7 @@ body {
 
 .list-group {
     margin-top: -34px;
-   
+
 }
 
 
@@ -70,7 +71,35 @@ body {
 }
 
 #anim1:hover {
-  transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+#anim2 {
+    transition: all 0.5s ease-in-out;
+    perspective: 480px;
+    transform: perspective(480px) rotateY(3deg) rotateX(8deg);
+}
+
+#card2:hover > #anim2 {
+    transform: rotateY(0);
+}
+
+#anim2:hover {
+    transform: rotateY(0);
+}
+
+#anim3 {
+    transition: all 0.5s ease-in-out;
+    perspective: 480px;
+    transform: perspective(480px) rotateY(-11deg) rotateX(8deg);
+}
+
+#card3:hover > #anim3 {
+    transform: rotateY(0);
+}
+
+#anim3:hover {
+    transform: rotateY(0);
 }
 
 
@@ -80,9 +109,37 @@ img.nav-bar-img {
     margin-right: 10px;
 }
 
+/*
 .navbar {
-    background-color: #f9faff;
+background: linear-gradient(
+  hsl(230, 100%, 99%) 0%,
+  hsla(230, 100%, 99%, 0.917) 5.3%,
+  hsla(230, 100%, 99%, 0.834) 10.6%,
+  hsla(230, 100%, 99%, 0.753) 15.9%,
+  hsla(230, 100%, 99%, 0.672) 21.3%,
+  hsla(230, 100%, 99%, 0.591) 26.8%,
+  hsla(230, 100%, 99%, 0.511) 32.5%,
+  hsla(230, 100%, 99%, 0.433) 38.4%,
+  hsla(230, 100%, 99%, 0.357) 44.5%,
+  hsla(230, 100%, 99%, 0.283) 50.9%,
+  hsla(230, 100%, 99%, 0.213) 57.7%,
+  hsla(230, 100%, 99%, 0.147) 65%,
+  hsla(230, 100%, 99%, 0.089) 72.9%,
+  hsla(230, 100%, 99%, 0.042) 81.4%,
+  hsla(230, 100%, 99%, 0.011) 90.6%,
+  hsla(230, 100%, 99%, 0) 100%
+);
     padding: 2.5rem 2rem;
+    border: none;
+
+}
+*/
+
+.navbar {
+    background-color: hsla(230, 100%, 99%, 0.950);
+    padding: 1.5rem;
+    border: none;
+    box-shadow: -1px 4px 3px 1px hsla(230, 100%, 99%, 0.95);
 
 }
 
@@ -124,12 +181,12 @@ img {
 }
 
 .img-flip {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 
@@ -163,7 +220,6 @@ span,
 li,
 a {
     font-family: 'Roboto', Sans-Serif;
-    text-align: justify;
     color: #26211D;
 
 }
@@ -183,6 +239,7 @@ p {
     line-height: 30px;
     margin-bottom: 25px;
 }
+
 
 span.img-caption {
     display: block;
@@ -302,29 +359,40 @@ blockquote {
 /* Portrait styles */
 
 img#selfportrait {
-    z-index: 4;
-    width: 120px;
-    left: 757px;
-    top: 229px;
-    position: fixed;
     /* opacity: 0.88; */
-        transition: 0.3s;
+    transition: 0.3s;
     transition-timing-function: ease-out;
 }
 
 #squareanimate {
     width: 120px;
     height: 120px;
-        transition: 0.3s;
+    transition: 0.3s;
     transition-timing-function: ease-out;
 }
 
 .square-main {
     background-color: #3944ef;
-    z-index: 2;
-    left: 794px;
-    top: 196px;
-    position: fixed;
+
+}
+
+.square-positioning {
+    float: right;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 3;
+}
+
+.square-positioning#selfportrait {
+    right: 105px;
+    top: 150px;
+    z-index: 4;
+    width: 120px;
+}
+
+.square-container {
+    top: -35px;
 }
 
 div#splice {
@@ -498,17 +566,17 @@ div#mobilecarouselshow {
     display: none;
 }
 
-    .landscape-carousel-image2 {
-        display: block;
-        height: 444px;
-        /* set min-width, allow images to set cell width */
-        min-width: 360px;
-        max-width: 100%;
-        margin-right: 10px;
-        /* vertically center */
-        top: 50%;
-        transform: translateY(-50%)
-    }
+.landscape-carousel-image2 {
+    display: block;
+    height: 444px;
+    /* set min-width, allow images to set cell width */
+    min-width: 360px;
+    max-width: 100%;
+    margin-right: 10px;
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%)
+}
 
 
 
@@ -528,20 +596,9 @@ div#mobilecarouselshow {
 
 @media (min-width: 1281px) {
 
-    img#selfportrait {
-        left: 857px;
-        top: 229px;
-    }
-
-    .square-main {
-        left: 874px;
-        top: 196px;
-
-    }
-    
     .fixed-top {
-    z-index: 4;
-}
+        z-index: 4;
+    }
 }
 
 /* 
@@ -573,23 +630,8 @@ div#mobilecarouselshow {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    .square-main {
-        left: 552px;
-        top: 196px;
-    }
-
-    img#selfportrait {
-        left: 535px;
-        top: 229px;
-
-    }
-
     .master-heading {
         margin-top: 262px;
-    }
-
-    .fixed-top {
-        position: absolute;
     }
 
 }
@@ -795,11 +837,13 @@ div#mobilecarouselshow {
         top: 50%;
         transform: translateY(-50%)
     }
-    
+
     .portfolio-grid {
-    padding-bottom: 111px;
+        padding-bottom: 111px;
+
+    }
+
 
 }
 
 
-}
