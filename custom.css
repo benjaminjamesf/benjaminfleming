@@ -144,7 +144,7 @@ background: linear-gradient(
 }
 
 .fixed-top {
-    z-index: 1;
+    z-index: 4;
 }
 
 a.navbar-brand {
